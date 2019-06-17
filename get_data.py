@@ -72,6 +72,6 @@ for imdb_id in progressbar.progressbar(imdb_ids):
         data[year][ref_year][1][title].append(reference)
 
 pickle.dump(data, open('data.p', 'wb'))
-f = open('chart/src/json/data.json', 'w')
+f = open('src/json/data.json', 'w')
 f.write(json.dumps(data))
 f.close()
